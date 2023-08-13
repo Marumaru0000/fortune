@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Telling for 中吉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFD700;
+        }
+        .fortune-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .fortune-result {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FFA500;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="fortune-text">あなたの運勢は</div>
+        <div class="fortune-result">中吉！</div>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.querySelector('.fortune-result').style.display = 'block';
+        }, 2000);
+    </script>
+</body>
+</html>
